@@ -27,7 +27,7 @@ export const appointment = async (req, res) => {
 };
 export const getAppointment = async (req, res)=>{
  try{
-    const {email}=req.body
+    const {email}=req.params
     const data= await Appointment.findBy({email})
     res.json({message:"Data fetched based on Email ",data})
  }

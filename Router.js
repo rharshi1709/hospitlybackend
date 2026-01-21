@@ -12,7 +12,7 @@ router.get('/category/:id',getSpecificCategory)
 router.post('/signup',signUp)
 router.post('/contact-us',contactUs)
 router.post('/appointment',appointment)
-router.get('/appointment',getAppointment)
+router.get('/appointment/:email',getAppointment)
 router.post('/signin',signIn)
 
 export default router
