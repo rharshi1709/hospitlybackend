@@ -13,7 +13,7 @@ name: {
     required: true
   },
   doctor: {
-    type: mongoose.Schema.Types.ObjectId,
+    type: String,
     ref: "Doctor",
     required: true
   },
