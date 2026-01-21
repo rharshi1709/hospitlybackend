@@ -14,7 +14,7 @@ const url=process.env.MONGO_URL
 mongoose.connect(url)
 .then(()=>{
     console.log("Connected Successfully to the Database")
-    app.listen(port,()=>{
+    app.listen(port||3000,()=>{
         console.log(`port is started on port no ${port}`)
     })
 })
