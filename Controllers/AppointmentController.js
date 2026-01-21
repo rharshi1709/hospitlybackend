@@ -1,4 +1,4 @@
-import Appointment from "../Models/AppointmentModel";
+import Appointment from "../Models/AppointmentModel.js";
 export const appointment = async (req, res) => {
   const { name, email, phone,category,date,time} = req.body;
 
