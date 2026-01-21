@@ -25,3 +25,14 @@ export const appointment = async (req, res) => {
     });
   }
 };
+export const getAppointment = async (req, res)=>{
+ try{
+    const email=req.body
+    const data= await Appointment.find({email})
+    res.json({message:"Data fetched based on Email ",data})
+ }
+ catch(err){
+    console.log(err)
+    res.send(err.message)
+ }
+}
