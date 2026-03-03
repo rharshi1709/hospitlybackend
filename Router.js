@@ -3,7 +3,7 @@ import { getCategory, getDoctors, getSpecificCategory, getSpecificDoctor } from 
 import { signIn, signUp } from './Controllers/UserController.js'
 import { contactUs } from './Controllers/ContactControllers.js'
 import { appointment, getAppointment } from './Controllers/AppointmentController.js'
-import { Admin } from './Controllers/AdminCOntroller.js'
+// import Admin from './Controllers/AdminController.js'
 import { getHospital, getSpecificDoctorFromSpecificHospital, getSpecificHospital } from './Controllers/HospitalController.js'
 const router = express.Router()
 
@@ -18,7 +18,7 @@ router.get('/appointment/:email',getAppointment)
 router.post('/signin',signIn)
 router.get('/hospitals',getHospital)
 router.get('/hospitals/:id',getSpecificHospital)
-router.post('/admin',Admin)
+// router.post('/admin',Admin)
 router.get('/hospitals/:id/doctor/:name',getSpecificDoctorFromSpecificHospital)
 
 export default router
